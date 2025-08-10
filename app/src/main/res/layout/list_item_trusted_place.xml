@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="16dp">
+
+    <!-- NEW: Icon to show the type of place -->
+    <ImageView
+        android:id="@+id/placeIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_map" /> <!-- Use a placeholder, we'll set it in code -->
+
+    <TextView
+        android:id="@+id/placeLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Home"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_delete"
+        android:contentDescription="Delete Place" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title -->
+
+    <!-- Toggle Detection Button -->
+
+    <!-- Sensitivity Label -->
+
+    <!-- Sensitivity Slider -->
+
+    <!-- Trusted Places Button -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/trustedPlacesButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Trusted Places"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sensitivitySlider" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/toggleDetectionButton"
+        android:layout_width="205dp"
+        android:layout_height="60dp"
+        android:paddingLeft="22dp"
+        android:paddingTop="12dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="12dp"
+        android:text="Start Detection"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:iconSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sensitivityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Sensitivity"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toggleDetectionButton" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sensitivitySlider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:stepSize="1.0"
+        android:value="3.0"
+        android:valueFrom="1.0"
+        android:valueTo="5.0"
+        app:labelBehavior="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sensitivityLabel" />
+
+    <!-- NEW: Header Image -->
+    <ImageView
+        android:id="@+id/headerIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/theft_detection_header_icon" />
+
+    <!-- Title (now constrained to the image) -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Theft Detection"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerIcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
