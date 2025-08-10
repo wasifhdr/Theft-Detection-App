@@ -1,0 +1,2 @@
+I created this app as part of my CSE323 (Operating Systems Design) course. I had to make an app that leveraged android's sensor data to perform a task. 
+So I came up with this app idea that might help in case of someone snatching your phone away while you're using it on the bus ar just walking along a street. Android already has an anti-theft feature built in, but it doesn't work accurately enough at all, making it useless.
